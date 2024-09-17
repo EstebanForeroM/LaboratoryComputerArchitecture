@@ -51,7 +51,7 @@ void setup() {
   pinMode(LED4_PIN, OUTPUT);
   digitalWrite(LED4_PIN, LOW);
 
-  timer = timerBegin(0, 80, true); // Timer 0, prescaler 80, count up
+  timer = timerBegin(0, 80, true); 
   timerAttachInterrupt(timer, &Timer0_ISR, true);
   timerAlarmWrite(timer, 1500000, true);
   timerAlarmEnable(timer);
